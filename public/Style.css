@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+@media (max-width: 812px){
+    
+    .gra-labels{
+        font-size: 10px;
+    }
+    .imag>.log{
+        height: 300px;
+        width: 300px;
+        position: absolute; /* se usa en caso de este div, donde tiene la altura y el ancho definido, sin esto top, right y left no funcionarían */
+        top: 51%; /* sirve en caso de un div como este, donde tiene una altura definida, en caso de que la altura no este definida esta edición no se pone ; */
+        right: 0; /* se debe usar para que margin 0 auto funcione */
+        left: 0; /* se debe usar para que margin 0 auto funcione */
+        margin: 0 auto; /* Esto lo centra */        
+    }
+    .info>.h2{        
+        margin-top: 400px;        
+    }
+    .input-titles{
+        font-size: 20px;
+    }
+    .simu{
+        position: relative;
+        margin-left: 0vh;
+    }
+    .grid-container{
+        
+            margin-top: 20px;
+            display: grid;
+            background-color:#7cc4ee;
+            grid-template-columns: 50% 50% !important;
+            grid-template-rows: repeat(6,auto) !important;
+            column-gap: 0px !important;
+            
+            
+            
+    }
+    .grid-item5{
+        margin-top: 20px;
+    }
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item5,
+    .grid-item6,
+    .grid-item7,
+    .grid-item8,
+    .grid-item9,
+    .grid-item10,
+    .grid-item11,
+    .grid-item12{
+        padding-top: 1em;
+    }
+    .grid_container{
+        margin-top: 20px;
+        display: grid;
+        background:#999;
+        padding: 10px 0 10px 0 !important;
+        grid-template-columns: 50% 50% !important;
+        
+        column-gap: 0px !important; 
+    }
+    Input{
+        width:20vh;
+        
+    }
+}
+
+.footer{
+    
+   position:fixed;
+   margin-top: 20px;
+   
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   z-index: 2;
+   
+    
+}
+.dedicatoria{
+        text-align: center;
+        position: absolute; /* se usa en caso de este div, donde tiene la altura y el ancho definido, sin esto top, right y left no funcionarían */
+        top: 51%; /* sirve en caso de un div como este, donde tiene una altura definida, en caso de que la altura no este definida esta edición no se pone ; */
+        right: 0; /* se debe usar para que margin 0 auto funcione */
+        left: 0; /* se debe usar para que margin 0 auto funcione */
+        margin: 0 auto; /* Esto lo centra */  
+}
+

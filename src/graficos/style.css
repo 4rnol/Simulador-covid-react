@@ -1,0 +1,90 @@
+
+.grid-container{
+	margin-top: 20px;
+    display: grid;    
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1em;
+	grid-template-rows: auto auto auto auto;
+	
+}
+.grid_container{
+	margin-top: 20px;
+    display: grid;	
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 1em;
+}
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6,
+.grid-item7,
+.grid-item8,
+.grid-item9,
+.grid-item10,
+.grid-item11,
+.grid-item12{
+	background:#7cc4ee;
+	
+}
+.grid_item1,
+.grid_item2,
+.grid_item3,
+.grid_item4{
+	background:#999;
+	padding: 15px 0 15px 0;
+}
+
+
+.btng{
+	border: 1px solid #3498db;
+	
+	padding:10px;
+	font-size: 17px ;
+	font-family: Arial, Heveltica;
+	cursor: pointer;	
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	background-color:  #7cc4ee;
+
+}
+
+.btng1{
+	
+	z-index: 1;
+}
+
+.btng1:hover{
+	color: #fff;
+	
+}
+
+.btng::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background:#181012;
+	z-index: -1;
+	transition: 0.8s;
+
+}
+
+.btng1::before{
+	
+   top: 0;
+   border-radius: 0 0 50% 50%;
+}
+.btng1:hover::before{
+	height: 180%;
+	
+} 
+@media (max-width: 812px){
+	.btng1{
+		
+		margin-right: -20%;
+	}
+}
